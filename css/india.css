@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 .india .audifono{
   position: absolute;
@@ -29,63 +30,70 @@
   margin: 10px 0;
 }
 .india .logos .portal{
-  width: calc(40% - 10px);
+  width: 50%;
   display: flex;
   padding: 0 5%;
 }
 .india .informacion{
   display: flex;
   flex-direction: column;
-  width: 60%;
-  padding: 0 20%;
-  padding-bottom: 30px;
 }
-.india .informacion .video{
-  width: 90%;
-  padding: 10px 10px;
-  justify-content: center;
-  margin-bottom: 20px;
+.india .informacion .comentario{
+  border: 1px solid #ccc;
+  max-width: 400px;
+  margin: 0 auto;
+  display: none;
 }
-.india .informacion .descripcion{
+.india .informacion .comentario:first-child {
+  display: block;
+}
+
+.india .informacion .comentario .video{
+  width: 100%;
+  display: none;
+  margin: 0 auto;
+}
+.india .informacion .comentario .video.visible{
+  display: block;
+}
+.india .informacion .comentario .descripcion{
   font-size: 16px;
 
 }
-.india .informacion .descripcion p{
-
-  font-size: 12px;
-  margin-bottom: 30px;
+.india .informacion .comentario .descripcion > p{
+    font-size: 14px;
+    padding: 10px;
+    letter-spacing: 0.2px;
+    line-height: 20px
 }
-.india .informacion .descripcion .usuario{
+.india .informacion .comentario .descripcion .usuario{
   display: flex;
   flex-direction: row;
   align-content: center;
+  padding: 10px;
 }
-.india .informacion .descripcion .usuario .foto{
+.india .informacion .comentario .descripcion .usuario .foto{
   width: 30px;
   height: 30px;
   border-radius: 15px;
 }
-.india .informacion .descripcion .usuario .user{
+.india .informacion .comentario .descripcion .usuario .user{
   margin-left: 10px;
   display: flex;
   flex-direction: column;
 
 }
-.india .informacion .descripcion .usuario .user h1{
+.india .informacion .comentario .descripcion .usuario .user h1{
   font-size: 14px;
   margin-bottom: 4px;
 }
-.india .informacion .descripcion .usuario .user p{
-  font-size: 10px;
-}
-.india .informacion .descripcion .descripcion02{
-  display: none;
+.india .informacion .comentario .descripcion .usuario .user p{
+  font-size: 12px;
 }
 
 .india .buttons .read{
   display: flex;
-  margin: auto;
-  margin-bottom: 20px;
+  margin: 20px auto;
   text-decoration: none;
   justify-content: center;
   color: black;
@@ -93,9 +101,21 @@
 .india .buttons .read span{
   margin-right: 10px;
 }
+@media screen and (min-width: 768px){
+  .india .informacion .comentario:first-child {
+    display: flex;
+    max-width: 600px;
+  }
+  .india .informacion .comentario .video {
+    width: 30%;
+  }
+  .india .informacion .comentario .descripcion {
+    width: 70%;
+  }
+}
 
 @media screen and (min-width: 1000px){
-  .india .titulo h1{
+  /*.india .titulo h1{
     font-size: 25px;
   }
   .india .titulo p{
@@ -115,6 +135,7 @@
     width: 80%;
     padding: 20px 10%;
     padding-bottom: 30px;
+    border: none;
   }
   .india .informacion .video{
     width: 30%;
@@ -126,37 +147,37 @@
     padding: 0 2.5%;
   }
 
-  .india .informacion .descripcion{
+  .india .informacion .comentario .descripcion{
 
     display: flex;
     margin: auto;
     padding: 10px 10px;
     justify-content: space-between;
   }
-  .india .informacion .descripcion p{
+  .india .informacion .comentario .descripcion p{
     font-size: 16px;
   }
-  .india .informacion .descripcion .descripcion{
+  .india .informacion .comentario .descripcion {
     width: 50%;
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(0,0,0,0.2);
     padding: 10px 10px;
   }
-  .india .informacion .descripcion .descripcion02{
+  .india .informacion .comentario .descripcion {
     width: 40%;
     display: block;
     border: 1px solid rgba(0,0,0,0.2);
     padding: 10px 10px;
   }
 
-  .india .informacion .descripcion .usuario .user h1{
+  .india .informacion .comentario .descripcion .usuario .user h1{
     font-size: 18px;
   }
-  .india .informacion .descripcion .usuario .user p{
+  .india .informacion .comentario .descripcion .usuario .user p{
     font-size: 14px;
   }
   .india .buttons .read{
     justify-content: center;
-  }
+  }*/
 }

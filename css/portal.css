@@ -127,7 +127,7 @@
 	}
 }
 @media screen and (min-width: 768px){
-	portal .logo img {
+	.portal .logo img {
 		width: 40px;
 	}
 	.portal .logo span {
@@ -177,13 +177,12 @@
 	}
 
 	.portal .menu{
-		display: flex;
 		justify-content: space-between;
 		padding: 0 20px;
 	}
 	.portal .access{
 		display: flex;
-
+		width: initial;
 	}
 	.portal .access a{
 		color : white;

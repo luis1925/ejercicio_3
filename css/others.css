@@ -28,6 +28,7 @@
   width: 300px;
   margin-top: -100px;
   margin-left: -100px;
+  
 }
 .others .background .imagen-esquina{
   position: relative;
@@ -95,6 +96,8 @@
   display: flex;
   justify-content: space-between;
   background:rgba(227,234,242,0.7);
+  padding: 5px 0;
+  align-items: center;
 }
 .others .cursos .producto .pie .student{
     display: flex;
@@ -114,11 +117,12 @@
 }
 .others .buttons .browse{
   display: flex;
-  width: 45%;
+  /*width: 45%;*/
+  width: initial;
   background: #3598db;
   justify-content: center;
   text-decoration: none;
-  border-radius: 17px;
+  border-radius: 20px;
   padding: 10px 10px;
   margin-bottom: 40px;
 }
@@ -126,6 +130,7 @@
     font-size: 14px;
     color: white;
     margin-right: 10px;
+    white-space: nowrap;
 }
 @media screen and (min-width: 1000px){
   .others .cursos{
@@ -133,7 +138,8 @@
     margin: auto;
   }
   .others .buttons .browse{
-    width: 10%;
+    width: 100%;
+    max-width: 200px;
     font-size: 25px;
   }
 }
