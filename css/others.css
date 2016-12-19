@@ -1,0 +1,133 @@
+
+.others{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding-right:
+}
+
+.others .base{
+  color: black;
+  justify-content: center;
+  padding-top: 60px;
+  margin: 30px 0;
+  text-align: center;
+}
+.others .base h1{
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.others .base p{
+  font-size: 14px;
+  padding: 0 10px;
+}
+.others .background{
+  position: absolute;
+  width: 300px;
+  margin-top: -100px;
+  margin-left: -100px;
+}
+.others .background .imagen-esquina{
+  position: relative;
+  width: 100%;
+}
+
+.others .cursos{
+
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+}
+.others .cursos .producto{
+  background: rgba(255,255,255,0.8);
+  margin: 10px;
+  width: 250px;
+}
+.others .cursos .producto .imagen-curso{
+  position: relative;
+}
+.others .cursos .producto .imagen-curso .capa{
+  position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background:rgba(188,198,207,0.3);
+}
+
+.others .cursos .producto .imagen-curso .imagen-base{
+  width: 100%;
+  height: 100%;
+}
+.others .cursos .producto .imagen-curso .imagen-base .imagen{
+  position: relative;
+  width: 100%;
+}
+.others .cursos .producto .imagen-curso .imagen-base .logo{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.others .cursos .producto h1{
+  font-size: 16px;
+  margin:10px 0;
+}
+.others .cursos .producto p{
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.others .cursos .producto .estrella{
+  color: yellow;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.others .cursos .producto .pie{
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  background:rgba(227,234,242,0.7);
+
+}
+.others .cursos .producto .pie .student{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.others .cursos .producto .pie .costo{
+  padding-right: 10px;
+  text-align: right;
+  margin: auto;
+  color: green;
+}
+.others .buttons{
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px;
+}
+.others .buttons .browse{
+  display: flex;
+  width: 45%;
+  background: #3598db;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 17px;
+  padding: 10px 10px;
+  margin-bottom: 40px;
+}
+.others .buttons .browse span{
+    font-size: 14px;
+    color: white;
+    margin-right: 10px;
+}
+@media screen and (min-width: 1000px){
+  .others .cursos{
+    padding: 0 ;
+    margin: auto;
+  }
+  .others .buttons .browse{
+    width: 10%;
+    font-size: 25px;
+  }
+}

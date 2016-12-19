@@ -1,0 +1,214 @@
+.portal{
+	position: relative;
+}
+
+.portal .background{
+	position: relative;
+	font-size: 0;
+}
+.portal .background .destock{
+	display: none;
+}
+.portal .background img{
+	width: 100%;
+}
+.portal .background .cap{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+}
+
+.portal .menu{
+	position: absolute;
+	top: 10%;
+	left: 0;
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+}
+.portal .logo{
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.portal .logo img{
+	width: 30px;
+	align-self: flex-end;
+	margin-right: 10px;
+}
+.portal .logo span{
+	color: white;
+}
+
+.portal .access{
+	display: none;
+}
+
+
+.portal .content-description{
+	position: absolute;
+	top: calc(50% - 110px);
+	left: 0;
+	width: 100%;
+}
+.portal .description{
+	width: 100%;
+	color: white;
+	text-align: center;
+	padding: 0 30px;
+	box-sizing: border-box;
+}
+.portal .description h1{
+	font-size: 18px;
+	line-height: 20px;
+	margin-bottom: 30px;
+}
+.portal .description p{
+	font-size: 14px;
+	line-height: 20px;
+	color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 50px;
+}
+.portal .description .buttons{
+	display: flex;
+	flex-direction: column;
+}
+.portal .description .buttons a{
+	align-self: center;
+	font-size: 14px;
+	border-radius: 17px;
+	color: white;
+	text-decoration: none;
+}
+.portal .description .buttons .start{
+	background: #14c752;
+	margin-bottom: 10px;
+	padding: 10px 33px;
+}
+.portal .description .buttons .browse{
+	border: 1px solid white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 10px 15px;
+	margin-bottom:
+}
+.portal .description .buttons .browse:hover{
+	background: #14c752;
+}
+.portal .description .buttons .browse span{
+	margin-right: 5px;
+}
+.portal .description .buttons .browse img{
+	width: 12px;
+	align-self: center;
+}
+.portal .arrow-bottom{
+	position: absolute;
+	bottom: 7%;
+	left: 0;
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+}
+
+@media screen and (min-width: 480px){
+	.portal .content-description{
+		display: flex;
+		justify-content: center;
+	}
+	.portal .description{
+		width: 400px;
+	}
+}
+@media screen and (min-width: 768px){
+	portal .logo img {
+		width: 40px;
+	}
+	.portal .logo span {
+		font-size: 30px;
+   }
+	.portal .description{
+		width: 600px;
+	}
+	.portal .description h1{
+		font-size: 30px;
+		line-height: 32px;
+
+	}
+	.portal .description p{
+		font-size: 22px;
+		line-height: 30px;
+		color: rgba(255, 255, 255, 0.8);
+		margin-bottom: 100px;
+	}
+	.portal .description .buttons a{
+		font-size: 18px;
+		border-radius: 23px;
+	}
+	.portal .description .buttons .start{
+		background: #14c752;
+		margin-bottom: 20px;
+		padding: 14px 33px;
+	}
+	.portal .description .buttons .browse{
+		border: 1px solid white;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 14px 15px;
+	}
+	.portal .description .buttons .browse img {
+    width: 18px;
+   }
+
+}
+@media screen and (min-width: 1000px){
+	.portal .background .mobile-tablet{
+		display: none;
+	}
+	.portal .background .destock{
+		display: block;
+	}
+
+	.portal .menu{
+		top: 5%;
+		display: flex;
+		justify-content: space-between;
+		padding: 0 50px;
+		box-sizing: border-box;
+	}
+	.portal .access{
+		display: flex;
+	}
+	.portal .access a{
+		color : white;
+		text-decoration: none;
+		font-size: 15px;
+		padding: 10px 30px;
+		text-align: center;
+	}
+	.portal .access .login {
+		margin-right: 25px;
+	}
+	.portal .access .signup{
+		background: #52a0de;
+		border-radius: 17.5px;
+
+	}
+	.portal .content-description{
+		top: calc(50% - 165px);
+	}
+	.portal .description{
+		width: 90%;
+	}
+
+}

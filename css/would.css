@@ -1,0 +1,224 @@
+.would{
+  background: #e2e9f1;
+}
+.would .encabezado{
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.would .encabezado h1{
+  font-size: 16px;
+  margin-bottom: 10px;
+  
+}
+.would .encabezado p{
+  font-size: 14px;
+  text-align: center;
+}
+.would .grupos .tecnologia{
+  text-align: left;
+}
+.would .grupos .tecnologia h1{
+  font-size: 16px;
+  padding: 10px 0;
+  background: #f2f5fa;
+  text-align: center;
+}
+.would .grupos .tecnologia p{
+  display: none;
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.would .grupos .marketing{
+  text-align: left;
+}
+.would .grupos .marketing h1{
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  text-align: center;
+}
+.would .grupos .marketing h2{
+  font-size: 16px;
+  padding: 10px 0;
+  text-align: center;
+}
+.would .grupos .marketing p{
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.would .grupos .exam{
+  text-align: left;
+}
+.would .grupos .exam h1{
+  font-size: 16px;
+  padding: 10px 0;
+  background: #f2f5fa;
+  text-align: center;
+}
+.would .grupos .exam p{
+  display: none;
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 8px;
+
+}
+.would .certification{
+  text-align: left;
+}
+.would .certification h1{
+  font-size: 16px;
+  padding: 10px 0;
+  background: #f2f5fa;
+  text-align: center;
+}
+.would .certification p{
+  display: none;
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.would .language{
+  text-align: left;
+}
+.would .language h1{
+  font-size: 16px;
+  padding: 10px 0;
+  background: #f2f5fa;
+  text-align: center;
+}
+.would .language p{
+  display: none;
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.would .expert{
+  width: 70%;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.would .expert h1{
+  font-size: 20px;
+  margin-bottom: 10px;
+
+}
+.would .expert p{
+  font-size: 14px;
+}
+.would .buttons{
+  width: 100%;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+
+.would .buttons .instructor{
+  background: #f69b0e;
+  color:white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 33px;
+  text-decoration: none;
+  margin-bottom: 1000px;
+}
+@media screen and (min-width: 1000px){
+
+  .would .encabezado h1{
+    text-align: left;
+    font-size: 20px;
+  }
+  .would .encabezado p{
+    text-align: left;
+  }
+  .would .grupos{
+    display: flex;
+    flex-wrap: wrap;
+    background: #e2e9f1;
+  }
+  .would .grupos .tecnologia{
+    margin: 0 20px;
+    width: 30%;
+    text-align: left;
+  }
+  .would .grupos .tecnologia h1{
+    text-align: left;
+    background: #e2e9f1;
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .would .grupos .tecnologia p{
+    display: block;
+
+  }
+  .would .grupos .marketing{
+    margin: 0 20px;
+    width: 30%;
+    text-align: left;
+  }
+  .would .grupos .marketing h1{
+    text-align: left;
+    background: #e2e9f1;
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .would .grupos .marketing h2{
+    text-align: left;
+  }
+  .would .grupos .marketing p{
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .would .grupos .exam{
+    margin: 0 20px;
+    width: 30%;
+    text-align: left;
+  }
+  .would .grupos .exam h1{
+    text-align: left;
+    background: #e2e9f1;
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .would .grupos .exam p{
+    display: block;
+  }
+  .would .grupos .certification{
+    margin: 0 20px;
+    width: 30%;
+    text-align: left;
+  }
+  .would .grupos .certification h1{
+    text-align: left;
+    background: #e2e9f1;
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .would .grupos .certification p{
+    display: block;
+
+  }
+  .would .grupos .language{
+    margin: 0 20px;
+    width: 30%;
+    text-align: left;
+  }
+  .would .grupos .language h1{
+    text-align: left;
+    background: #e2e9f1;
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .would .grupos .language p{
+    display: block;
+  }
+  .would .expert{
+    width: 70%;
+  }
+
+}

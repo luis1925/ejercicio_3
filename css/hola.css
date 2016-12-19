@@ -1,0 +1,1054 @@
+Luis@Luis1925 MINGW64 /d/Proyecto
+$ git pull [merge]
+[mergetool "meld"]
+  cmd = \"C:\\Program Files (x86)\\Meld\\Meld.exe\" "$PWD/$LOCAL" "$PWD/$BASE" "                                                                                                                $PWD/$REMOTE" "--output=$PWD/$MERGED"
+  path = C:/Program Files (x86)/Meld/Meld.exe
+  trustExitCode = false
+  keepBackup = falsefatal: Not a git repository (or any of the parent directorie                                                                                                                s): .git
+
+Luis@Luis1925 MINGW64 /d/Proyecto
+$   tool = meld
+bash: tool: command not found
+
+Luis@Luis1925 MINGW64 /d/Proyecto
+$ [mergetool "meld"]
+bash: [mergetool: command not found
+
+Luis@Luis1925 MINGW64 /d/Proyecto
+$   cmd = \"C:\\Program Files (x86)\\Meld\\Meld.exe\" "$PWD/$LOCAL" "$PWD/$BASE"                                                                                                                 "$PWD/$REMOTE" "--output=$PWD/$MERGED"
+bash: syntax error near unexpected token `('
+
+Luis@Luis1925 MINGW64 /d/Proyecto
+$   path = C:/Program Files (x86)/Meld/Meld.exe
+bash: syntax error near unexpected token `('
+
+Luis@Luis1925 MINGW64 /d/Proyecto
+$   trustExitCode = false
+bash: trustExitCode: command not found
+
+Luis@Luis1925 MINGW64 /d/Proyecto
+$
+
+Luis@Luis1925 MINGW64 /d/Proyecto
+$ git pull https://github.com/victormf28/capacitaciones.git
+fatal: Not a git repository (or any of the parent directories): .git
+
+Luis@Luis1925 MINGW64 /d/Proyecto
+$ git clone https://github.com/victormf28/capacitaciones.git
+Cloning into 'capacitaciones'...
+fatal: unable to access 'https://github.com/victormf28/capacitaciones.git/': Unk                                                                                                                nown SSL protocol error in connection to github.com:443
+
+Luis@Luis1925 MINGW64 /d/Proyecto
+$ git clone https://github.com/victormf28/capacitaciones.git
+Cloning into 'capacitaciones'...
+remote: Counting objects: 47, done.
+remote: Compressing objects: 100% (38/38), done.
+remote: Total 47 (delta 9), reused 34 (delta 6), pack-reused 0
+Unpacking objects: 100% (47/47), done.
+
+Luis@Luis1925 MINGW64 /d/Proyecto
+$ cd capacitaciones
+
+Luis@Luis1925 MINGW64 /d/Proyecto/capacitaciones (master)
+$ git pull origin master
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 4 (delta 1), reused 4 (delta 1), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+From https://github.com/victormf28/capacitaciones
+ * branch            master     -> FETCH_HEAD
+   187edf0..37d00ff  master     -> origin/master
+Updating 187edf0..37d00ff
+Fast-forward
+ capacitacion02/paulo.html | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 capacitacion02/paulo.html
+
+Luis@Luis1925 MINGW64 /d/Proyecto/capacitaciones (master)
+$ git checkout -b master_luis1925
+Switched to a new branch 'master_luis1925'
+
+Luis@Luis1925 MINGW64 /d/Proyecto/capacitaciones (master_luis1925)
+$ git status
+On branch master_luis1925
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        capacitacion02/luisfernando.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Luis@Luis1925 MINGW64 /d/Proyecto/capacitaciones (master_luis1925)
+$ git commit -m "cambio de luis fernando"
+On branch master_luis1925
+Untracked files:
+        capacitacion02/luisfernando.html
+
+nothing added to commit but untracked files present
+
+Luis@Luis1925 MINGW64 /d/Proyecto/capacitaciones (master_luis1925)
+$ git add --all
+
+Luis@Luis1925 MINGW64 /d/Proyecto/capacitaciones (master_luis1925)
+$ git status
+On branch master_luis1925
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   capacitacion02/luisfernando.html
+
+
+Luis@Luis1925 MINGW64 /d/Proyecto/capacitaciones (master_luis1925)
+$ git commit -m "cambio de luis fernando"
+[master_luis1925 6ac0eca] cambio de luis fernando
+ Committer: Luis Fernando Valderrama Gastiaburu <Luis Fernando Valderrama Gastia                                                                                                                buru>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 10 insertions(+)
+ create mode 100644 capacitacion02/luisfernando.html
+
+Luis@Luis1925 MINGW64 /d/Proyecto/capacitaciones (master_luis1925)
+$  git config --global user.name "luis1925"
+
+Luis@Luis1925 MINGW64 /d/Proyecto/capacitaciones (master_luis1925)
+$ git config --global user.email valderramagastiaburuluisfernan@gmail.com
+
+Luis@Luis1925 MINGW64 /d/Proyecto/capacitaciones (master_luis1925)
+$  git config --global user.name
+luis1925
+
+Luis@Luis1925 MINGW64 /d/Proyecto/capacitaciones (master_luis1925)
+$  git config --global user.email
+valderramagastiaburuluisfernan@gmail.com
+
+Luis@Luis1925 MINGW64 /d/Proyecto/capacitaciones (master_luis1925)
+$ git pull origin master
+From https://github.com/victormf28/capacitaciones
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+
+Luis@Luis1925 MINGW64 /d/Proyecto/capacitaciones (master_luis1925)
+$ git commit -m "cambio de luis fernando"
+On branch master_luis1925
+nothing to commit, working tree clean
+
+Luis@Luis1925 MINGW64 /d/Proyecto/capacitaciones (master_luis1925)
+$ git log
+commit 6ac0eca2e65495c367c8f4b23e675a0e9775c703
+Author: Luis Fernando Valderrama Gastiaburu <Luis Fernando Valderrama Gastiaburu                                                                                                                >
+Date:   Sat Dec 17 16:05:49 2016 -0500
+
+    cambio de luis fernando
+
+commit 37d00fff5006f6326f6b57385740c7e21d15dfe1
+Author: Paulo018 <paulo01324@hotmail.com>
+Date:   Sat Dec 17 15:58:41 2016 -0500
+
+    Cambios de Paulo
+
+commit 187edf046c0bfbe838df2246563a453e21c8f346
+Merge: 5518266 4d0f14e
+Author: Power8000 <pee_98tauro@hotmail.com>
+Date:   Sat Dec 17 15:37:30 2016 -0500
+
+    Merge branch 'master-pedro'
+
+commit 5518266b21792d6fbbb3136251bba0825cc37275
+Merge: 9732320 7a8ca5b
+Author: Ipsum01 <luis_paco@hotmail.com>
+Date:   Sat Dec 17 15:32:33 2016 -0500
+
+    Merge branch 'master_Luis'
+
+commit 7a8ca5bbf4c91093295b83c7e2978148bb28cf6b
+Author: Ipsum01 <luis_paco@hotmail.com>
+Date:   Sat Dec 17 14:49:22 2016 -0500
+
+    cambios Luis
+
+commit 9732320429cd115d8cbddf158b52d9d7e2219561
+Author: elizabeth <elizabeth_virgo26_97@hotmail.com>
+Date:   Sat Dec 17 14:53:40 2016 -0500
+
+    Cambios nombre
+
+commit 4d0f14ee0d57370ba204e82845b604b4f4e47d82
+Author: pedro jesus mendoza ardiles <pedro jesus mendoza ardiles>
+Date:   Sat Dec 17 14:43:11 2016 -0500
+
+    Cambios de Pedro
+
+commit aa40c9a7b1693bcf8bc182f918fd82a34e6c33fe
+Author: Victor Morales <victor_flores_5@hotmail.com>
+Date:   Sat Dec 17 14:15:21 2016 -0500
+
+    cambios para git
+
+commit 15b7bac1ae34ccca8b7ebea439e41a1c7f62bd34
+Author: victormf28 <victor_flores_5@hotmail.com>
+Date:   Sun Dec 11 13:11:55 2016 -0500
+
+    Feat(Cap 01): se avanza ejericio 03
+
+commit 7741d76b661119bbf928a4c984ab792ade6a0e3b
+Author: Victor Morales <victor_flores_5@hotmail.com>
+Date:   Sat Dec 10 18:31:00 2016 -0500
+
+    Feat(Capacitaciones): Se agregan tarea, ejercicio 1 y 2
+ ESCOC
+4e47d82
+ro jesus mendoza ardiles>
+
+
+
+
+e6c33fe
+hotmail.com>
+
+
+
+
+f62bd34
+ail.com>
+
+
+
+
+e6a0e3b
+hotmail.com>
+
+
+ea, ejercicio 1 y 2
+(END)
+775c703
+uru <Luis Fernando Valderrama Gastiaburu>
+
+
+
+
+d15dfe1
+>
+
+
+
+
+1c8f346
+
+om>
+
+
+
+
+cc37275
+
+
+
+
+
+
+b28cf6b
+
+
+
+
+
+2219561
+hotmail.com>
+
+
+
+
+4e47d82
+ro jesus mendoza ardiles>
+
+
+
+
+e6c33fe
+hotmail.com>
+
+
+
+
+f62bd34
+ail.com>
+
+
+
+
+e6a0e3b
+ ESCOD
+commit 6ac0eca2e65495c367c8f4b23e675a0e9775c703
+Author: Luis Fernando Valderrama Gastiaburu <Luis Fernando Valderrama Gastiaburu>
+Date:   Sat Dec 17 16:05:49 2016 -0500
+
+    cambio de luis fernando
+
+commit 37d00fff5006f6326f6b57385740c7e21d15dfe1
+Author: Paulo018 <paulo01324@hotmail.com>
+Date:   Sat Dec 17 15:58:41 2016 -0500
+
+    Cambios de Paulo
+
+commit 187edf046c0bfbe838df2246563a453e21c8f346
+Merge: 5518266 4d0f14e
+Author: Power8000 <pee_98tauro@hotmail.com>
+Date:   Sat Dec 17 15:37:30 2016 -0500
+
+    Merge branch 'master-pedro'
+
+commit 5518266b21792d6fbbb3136251bba0825cc37275
+Merge: 9732320 7a8ca5b
+Author: Ipsum01 <luis_paco@hotmail.com>
+Date:   Sat Dec 17 15:32:33 2016 -0500
+
+    Merge branch 'master_Luis'
+
+commit 7a8ca5bbf4c91093295b83c7e2978148bb28cf6b
+Author: Ipsum01 <luis_paco@hotmail.com>
+Date:   Sat Dec 17 14:49:22 2016 -0500
+
+    cambios Luis
+
+commit 9732320429cd115d8cbddf158b52d9d7e2219561
+Author: elizabeth <elizabeth_virgo26_97@hotmail.com>
+Date:   Sat Dec 17 14:53:40 2016 -0500
+
+    Cambios nombre
+
+commit 4d0f14ee0d57370ba204e82845b604b4f4e47d82
+Author: pedro jesus mendoza ardiles <pedro jesus mendoza ardiles>
+Date:   Sat Dec 17 14:43:11 2016 -0500
+
+    Cambios de Pedro
+
+commit aa40c9a7b1693bcf8bc182f918fd82a34e6c33fe
+Author: Victor Morales <victor_flores_5@hotmail.com>
+Date:   Sat Dec 17 14:15:21 2016 -0500
+
+    cambios para git
+
+commit 15b7bac1ae34ccca8b7ebea439e41a1c7f62bd34
+Author: victormf28 <victor_flores_5@hotmail.com>
+Date:   Sun Dec 11 13:11:55 2016 -0500
+
+    Feat(Cap 01): se avanza ejericio 03
+
+commit 7741d76b661119bbf928a4c984ab792ade6a0e3b
+ ESCOD
+commit 6ac0eca2e65495c367c8f4b23e675a0e9775c703
+Author: Luis Fernando Valderrama Gastiaburu <Luis Fernando Valderrama Gastiaburu>
+Date:   Sat Dec 17 16:05:49 2016 -0500
+
+    cambio de luis fernando
+
+commit 37d00fff5006f6326f6b57385740c7e21d15dfe1
+Author: Paulo018 <paulo01324@hotmail.com>
+Date:   Sat Dec 17 15:58:41 2016 -0500
+
+    Cambios de Paulo
+
+commit 187edf046c0bfbe838df2246563a453e21c8f346
+Merge: 5518266 4d0f14e
+Author: Power8000 <pee_98tauro@hotmail.com>
+Date:   Sat Dec 17 15:37:30 2016 -0500
+
+    Merge branch 'master-pedro'
+
+commit 5518266b21792d6fbbb3136251bba0825cc37275
+Merge: 9732320 7a8ca5b
+Author: Ipsum01 <luis_paco@hotmail.com>
+Date:   Sat Dec 17 15:32:33 2016 -0500
+
+    Merge branch 'master_Luis'
+
+commit 7a8ca5bbf4c91093295b83c7e2978148bb28cf6b
+Author: Ipsum01 <luis_paco@hotmail.com>
+Date:   Sat Dec 17 14:49:22 2016 -0500
+
+    cambios Luis
+
+commit 9732320429cd115d8cbddf158b52d9d7e2219561
+Author: elizabeth <elizabeth_virgo26_97@hotmail.com>
+Date:   Sat Dec 17 14:53:40 2016 -0500
+
+    Cambios nombre
+
+commit 4d0f14ee0d57370ba204e82845b604b4f4e47d82
+Author: pedro jesus mendoza ardiles <pedro jesus mendoza ardiles>
+Date:   Sat Dec 17 14:43:11 2016 -0500
+
+    Cambios de Pedro
+
+commit aa40c9a7b1693bcf8bc182f918fd82a34e6c33fe
+Author: Victor Morales <victor_flores_5@hotmail.com>
+Date:   Sat Dec 17 14:15:21 2016 -0500
+
+    cambios para git
+
+commit 15b7bac1ae34ccca8b7ebea439e41a1c7f62bd34
+Author: victormf28 <victor_flores_5@hotmail.com>
+Date:   Sun Dec 11 13:11:55 2016 -0500
+
+    Feat(Cap 01): se avanza ejericio 03
+
+commit 7741d76b661119bbf928a4c984ab792ade6a0e3b
+ ESCOD
+commit 6ac0eca2e65495c367c8f4b23e675a0e9775c703
+Author: Luis Fernando Valderrama Gastiaburu <Luis Fernando Valderrama Gastiaburu>
+Date:   Sat Dec 17 16:05:49 2016 -0500
+commit 6ac0eca2e65495c367c8f4b23e675a0e9775c703
+Author: Luis Fernando Valderrama Gastiaburu <Luis Fernando Valderrama Gastiaburu>
+Date:   Sat Dec 17 16:05:49 2016 -0500
+
+    cambio de luis fernando
+
+commit 37d00fff5006f6326f6b57385740c7e21d15dfe1
+Author: Paulo018 <paulo01324@hotmail.com>
+Date:   Sat Dec 17 15:58:41 2016 -0500
+
+    Cambios de Paulo
+
+commit 187edf046c0bfbe838df2246563a453e21c8f346
+Merge: 5518266 4d0f14e
+Author: Power8000 <pee_98tauro@hotmail.com>
+Date:   Sat Dec 17 15:37:30 2016 -0500
+
+    Merge branch 'master-pedro'
+
+commit 5518266b21792d6fbbb3136251bba0825cc37275
+Merge: 9732320 7a8ca5b
+Author: Ipsum01 <luis_paco@hotmail.com>
+Date:   Sat Dec 17 15:32:33 2016 -0500
+
+    Merge branch 'master_Luis'
+
+commit 7a8ca5bbf4c91093295b83c7e2978148bb28cf6b
+Author: Ipsum01 <luis_paco@hotmail.com>
+Date:   Sat Dec 17 14:49:22 2016 -0500
+
+    cambios Luis
+
+commit 9732320429cd115d8cbddf158b52d9d7e2219561
+Author: elizabeth <elizabeth_virgo26_97@hotmail.com>
+Date:   Sat Dec 17 14:53:40 2016 -0500
+
+    Cambios nombre
+
+commit 4d0f14ee0d57370ba204e82845b604b4f4e47d82
+Author: pedro jesus mendoza ardiles <pedro jesus mendoza ardiles>
+Date:   Sat Dec 17 14:43:11 2016 -0500
+
+    Cambios de Pedro
+
+commit aa40c9a7b1693bcf8bc182f918fd82a34e6c33fe
+Author: Victor Morales <victor_flores_5@hotmail.com>
+Date:   Sat Dec 17 14:15:21 2016 -0500
+
+    cambios para git
+
+commit 15b7bac1ae34ccca8b7ebea439e41a1c7f62bd34
+Author: victormf28 <victor_flores_5@hotmail.com>
+Date:   Sun Dec 11 13:11:55 2016 -0500
+
+    Feat(Cap 01): se avanza ejericio 03
+
+commit 7741d76b661119bbf928a4c984ab792ade6a0e3b
+ ESCOD
+commit 6ac0eca2e65495c367c8f4b23e675a0e9775c703
+Author: Luis Fernando Valderrama Gastiaburu <Luis Fernando Valderrama Gastiaburu>
+Date:   Sat Dec 17 16:05:49 2016 -0500
+
+    cambio de luis fernando
+
+commit 37d00fff5006f6326f6b57385740c7e21d15dfe1
+Author: Paulo018 <paulo01324@hotmail.com>
+Date:   Sat Dec 17 15:58:41 2016 -0500
+
+    Cambios de Paulo
+
+commit 187edf046c0bfbe838df2246563a453e21c8f346
+Merge: 5518266 4d0f14e
+Author: Power8000 <pee_98tauro@hotmail.com>
+Date:   Sat Dec 17 15:37:30 2016 -0500
+
+    Merge branch 'master-pedro'
+
+commit 5518266b21792d6fbbb3136251bba0825cc37275
+Merge: 9732320 7a8ca5b
+Author: Ipsum01 <luis_paco@hotmail.com>
+Date:   Sat Dec 17 15:32:33 2016 -0500
+
+    Merge branch 'master_Luis'
+
+commit 7a8ca5bbf4c91093295b83c7e2978148bb28cf6b
+Author: Ipsum01 <luis_paco@hotmail.com>
+Date:   Sat Dec 17 14:49:22 2016 -0500
+
+    cambios Luis
+
+commit 9732320429cd115d8cbddf158b52d9d7e2219561
+Author: elizabeth <elizabeth_virgo26_97@hotmail.com>
+Date:   Sat Dec 17 14:53:40 2016 -0500
+
+    Cambios nombre
+
+commit 4d0f14ee0d57370ba204e82845b604b4f4e47d82
+Author: pedro jesus mendoza ardiles <pedro jesus mendoza ardiles>
+Date:   Sat Dec 17 14:43:11 2016 -0500
+
+    Cambios de Pedro
+
+commit aa40c9a7b1693bcf8bc182f918fd82a34e6c33fe
+Author: Victor Morales <victor_flores_5@hotmail.com>
+Date:   Sat Dec 17 14:15:21 2016 -0500
+
+    cambios para git
+
+commit 15b7bac1ae34ccca8b7ebea439e41a1c7f62bd34
+Author: victormf28 <victor_flores_5@hotmail.com>
+Date:   Sun Dec 11 13:11:55 2016 -0500
+
+    Feat(Cap 01): se avanza ejericio 03
+
+commit 7741d76b661119bbf928a4c984ab792ade6a0e3b
+ ESCOD
+commit 6ac0eca2e65495c367c8f4b23e675a0e9775c703
+Author: Luis Fernando Valderrama Gastiaburu <Luis Fernando Valderrama Gastiaburu>
+Date:   Sat Dec 17 16:05:49 2016 -0500
+
+    cambio de luis fernando
+
+commit 37d00fff5006f6326f6b57385740c7e21d15dfe1
+Author: Paulo018 <paulo01324@hotmail.com>
+Date:   Sat Dec 17 15:58:41 2016 -0500
+
+    Cambios de Paulo
+
+commit 187edf046c0bfbe838df2246563a453e21c8f346
+Merge: 5518266 4d0f14e
+Author: Power8000 <pee_98tauro@hotmail.com>
+Date:   Sat Dec 17 15:37:30 2016 -0500
+
+    Merge branch 'master-pedro'
+
+commit 5518266b21792d6fbbb3136251bba0825cc37275
+Merge: 9732320 7a8ca5b
+Author: Ipsum01 <luis_paco@hotmail.com>
+Date:   Sat Dec 17 15:32:33 2016 -0500
+
+    Merge branch 'master_Luis'
+
+commit 7a8ca5bbf4c91093295b83c7e2978148bb28cf6b
+Author: Ipsum01 <luis_paco@hotmail.com>
+Date:   Sat Dec 17 14:49:22 2016 -0500
+
+    cambios Luis
+
+commit 9732320429cd115d8cbddf158b52d9d7e2219561
+Author: elizabeth <elizabeth_virgo26_97@hotmail.com>
+Date:   Sat Dec 17 14:53:40 2016 -0500
+
+    Cambios nombre
+
+commit 4d0f14ee0d57370ba204e82845b604b4f4e47d82
+Author: pedro jesus mendoza ardiles <pedro jesus mendoza ardiles>
+Date:   Sat Dec 17 14:43:11 2016 -0500
+
+    Cambios de Pedro
+
+commit aa40c9a7b1693bcf8bc182f918fd82a34e6c33fe
+Author: Victor Morales <victor_flores_5@hotmail.com>
+Date:   Sat Dec 17 14:15:21 2016 -0500
+
+    cambios para git
+
+commit 15b7bac1ae34ccca8b7ebea439e41a1c7f62bd34
+Author: victormf28 <victor_flores_5@hotmail.com>
+Date:   Sun Dec 11 13:11:55 2016 -0500
+
+    Feat(Cap 01): se avanza ejericio 03
+
+commit 7741d76b661119bbf928a4c984ab792ade6a0e3b
+ ESCOD
+commit 6ac0eca2e65495c367c8f4b23e675a0e9775c703
+Author: Luis Fernando Valderrama Gastiaburu <Luis Fernando Valderrama Gastiaburu>
+Date:   Sat Dec 17 16:05:49 2016 -0500
+
+    cambio de luis fernando
+
+commit 37d00fff5006f6326f6b57385740c7e21d15dfe1
+Author: Paulo018 <paulo01324@hotmail.com>
+Date:   Sat Dec 17 15:58:41 2016 -0500
+
+    Cambios de Paulo
+
+commit 187edf046c0bfbe838df2246563a453e21c8f346
+Merge: 5518266 4d0f14e
+Author: Power8000 <pee_98tauro@hotmail.com>
+Date:   Sat Dec 17 15:37:30 2016 -0500
+
+    Merge branch 'master-pedro'
+
+commit 5518266b21792d6fbbb3136251bba0825cc37275
+Merge: 9732320 7a8ca5b
+Author: Ipsum01 <luis_paco@hotmail.com>
+Date:   Sat Dec 17 15:32:33 2016 -0500
+
+    Merge branch 'master_Luis'
+
+commit 7a8ca5bbf4c91093295b83c7e2978148bb28cf6b
+Author: Ipsum01 <luis_paco@hotmail.com>
+Date:   Sat Dec 17 14:49:22 2016 -0500
+
+    cambios Luis
+
+commit 9732320429cd115d8cbddf158b52d9d7e2219561
+Author: elizabeth <elizabeth_virgo26_97@hotmail.com>
+Date:   Sat Dec 17 14:53:40 2016 -0500
+
+    Cambios nombre
+
+commit 4d0f14ee0d57370ba204e82845b604b4f4e47d82
+Author: pedro jesus mendoza ardiles <pedro jesus mendoza ardiles>
+Date:   Sat Dec 17 14:43:11 2016 -0500
+
+    Cambios de Pedro
+
+commit aa40c9a7b1693bcf8bc182f918fd82a34e6c33fe
+Author: Victor Morales <victor_flores_5@hotmail.com>
+Date:   Sat Dec 17 14:15:21 2016 -0500
+
+    cambios para git
+
+commit 15b7bac1ae34ccca8b7ebea439e41a1c7f62bd34
+Author: victormf28 <victor_flores_5@hotmail.com>
+Date:   Sun Dec 11 13:11:55 2016 -0500
+
+    Feat(Cap 01): se avanza ejericio 03
+
+commit 7741d76b661119bbf928a4c984ab792ade6a0e3b
+ ESCOD
+commit 6ac0eca2e65495c367c8f4b23e675a0e9775c703
+Author: Luis Fernando Valderrama Gastiaburu <Luis Fernando Valderrama Gastiaburu>
+Date:   Sat Dec 17 16:05:49 2016 -0500
+
+    cambio de luis fernando
+
+commit 37d00fff5006f6326f6b57385740c7e21d15dfe1
+Author: Paulo018 <paulo01324@hotmail.com>
+Date:   Sat Dec 17 15:58:41 2016 -0500
+
+    Cambios de Paulo
+
+commit 187edf046c0bfbe838df2246563a453e21c8f346
+Merge: 5518266 4d0f14e
+Author: Power8000 <pee_98tauro@hotmail.com>
+Date:   Sat Dec 17 15:37:30 2016 -0500
+
+    Merge branch 'master-pedro'
+
+commit 5518266b21792d6fbbb3136251bba0825cc37275
+Merge: 9732320 7a8ca5b
+Author: Ipsum01 <luis_paco@hotmail.com>
+Date:   Sat Dec 17 15:32:33 2016 -0500
+
+    Merge branch 'master_Luis'
+
+commit 7a8ca5bbf4c91093295b83c7e2978148bb28cf6b
+Author: Ipsum01 <luis_paco@hotmail.com>
+Date:   Sat Dec 17 14:49:22 2016 -0500
+
+    cambios Luis
+
+commit 9732320429cd115d8cbddf158b52d9d7e2219561
+Author: elizabeth <elizabeth_virgo26_97@hotmail.com>
+Date:   Sat Dec 17 14:53:40 2016 -0500
+
+    Cambios nombre
+
+commit 4d0f14ee0d57370ba204e82845b604b4f4e47d82
+Author: pedro jesus mendoza ardiles <pedro jesus mendoza ardiles>
+Date:   Sat Dec 17 14:43:11 2016 -0500
+
+    Cambios de Pedro
+
+commit aa40c9a7b1693bcf8bc182f918fd82a34e6c33fe
+Author: Victor Morales <victor_flores_5@hotmail.com>
+Date:   Sat Dec 17 14:15:21 2016 -0500
+
+    cambios para git
+
+commit 15b7bac1ae34ccca8b7ebea439e41a1c7f62bd34
+Author: victormf28 <victor_flores_5@hotmail.com>
+Date:   Sun Dec 11 13:11:55 2016 -0500
+
+    Feat(Cap 01): se avanza ejericio 03
+
+commit 7741d76b661119bbf928a4c984ab792ade6a0e3b
+ ESCOD
+commit 6ac0eca2e65495c367c8f4b23e675a0e9775c703
+Author: Luis Fernando Valderrama Gastiaburu <Luis Fernando Valderrama Gastiaburu>
+Date:   Sat Dec 17 16:05:49 2016 -0500
+
+    cambio de luis fernando
+
+commit 37d00fff5006f6326f6b57385740c7e21d15dfe1
+Author: Paulo018 <paulo01324@hotmail.com>
+Date:   Sat Dec 17 15:58:41 2016 -0500
+
+    Cambios de Paulo
+
+commit 187edf046c0bfbe838df2246563a453e21c8f346
+Merge: 5518266 4d0f14e
+Author: Power8000 <pee_98tauro@hotmail.com>
+Date:   Sat Dec 17 15:37:30 2016 -0500
+
+    Merge branch 'master-pedro'
+
+commit 5518266b21792d6fbbb3136251bba0825cc37275
+Merge: 9732320 7a8ca5b
+Author: Ipsum01 <luis_paco@hotmail.com>
+Date:   Sat Dec 17 15:32:33 2016 -0500
+
+    Merge branch 'master_Luis'
+
+commit 7a8ca5bbf4c91093295b83c7e2978148bb28cf6b
+Author: Ipsum01 <luis_paco@hotmail.com>
+Date:   Sat Dec 17 14:49:22 2016 -0500
+
+    cambios Luis
+
+commit 9732320429cd115d8cbddf158b52d9d7e2219561
+Author: elizabeth <elizabeth_virgo26_97@hotmail.com>
+Date:   Sat Dec 17 14:53:40 2016 -0500
+
+    Cambios nombre
+
+commit 4d0f14ee0d57370ba204e82845b604b4f4e47d82
+Author: pedro jesus mendoza ardiles <pedro jesus mendoza ardiles>
+Date:   Sat Dec 17 14:43:11 2016 -0500
+
+    Cambios de Pedro
+
+commit aa40c9a7b1693bcf8bc182f918fd82a34e6c33fe
+Author: Victor Morales <victor_flores_5@hotmail.com>
+Date:   Sat Dec 17 14:15:21 2016 -0500
+
+    cambios para git
+
+commit 15b7bac1ae34ccca8b7ebea439e41a1c7f62bd34
+Author: victormf28 <victor_flores_5@hotmail.com>
+Date:   Sun Dec 11 13:11:55 2016 -0500
+
+    Feat(Cap 01): se avanza ejericio 03
+
+commit 7741d76b661119bbf928a4c984ab792ade6a0e3b
+Author: Victor Morales <victor_flores_5@hotmail.com>
+Date:   Sat Dec 10 18:31:00 2016 -0500
+
+    Feat(Capacitaciones): Se agregan tarea, ejercicio 1 y 2
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+    cambio de luis fernando
+
+commit 37d00fff5006f6326f6b57385740c7e21d15dfe1
+Author: Paulo018 <paulo01324@hotmail.com>
+Date:   Sat Dec 17 15:58:41 2016 -0500
+
+    Cambios de Paulo
+
+commit 187edf046c0bfbe838df2246563a453e21c8f346
+Merge: 5518266 4d0f14e
+Author: Power8000 <pee_98tauro@hotmail.com>
+Date:   Sat Dec 17 15:37:30 2016 -0500
+
+    Merge branch 'master-pedro'
+
+commit 5518266b21792d6fbbb3136251bba0825cc37275
+Merge: 9732320 7a8ca5b
+Author: Ipsum01 <luis_paco@hotmail.com>
+Date:   Sat Dec 17 15:32:33 2016 -0500
+
+    Merge branch 'master_Luis'
+
+commit 7a8ca5bbf4c91093295b83c7e2978148bb28cf6b
+Author: Ipsum01 <luis_paco@hotmail.com>
+Date:   Sat Dec 17 14:49:22 2016 -0500
+
+    cambios Luis
+
+commit 9732320429cd115d8cbddf158b52d9d7e2219561
+Author: elizabeth <elizabeth_virgo26_97@hotmail.com>
+Date:   Sat Dec 17 14:53:40 2016 -0500
+
+    Cambios nombre
+
+commit 4d0f14ee0d57370ba204e82845b604b4f4e47d82
+Author: pedro jesus mendoza ardiles <pedro jesus mendoza ardiles>
+Date:   Sat Dec 17 14:43:11 2016 -0500
+
+    Cambios de Pedro
+
+commit aa40c9a7b1693bcf8bc182f918fd82a34e6c33fe
+Author: Victor Morales <victor_flores_5@hotmail.com>
+Date:   Sat Dec 17 14:15:21 2016 -0500
+
+    cambios para git
+
+commit 15b7bac1ae34ccca8b7ebea439e41a1c7f62bd34
+Author: victormf28 <victor_flores_5@hotmail.com>
+Date:   Sun Dec 11 13:11:55 2016 -0500
+
+    Feat(Cap 01): se avanza ejericio 03
+
+commit 7741d76b661119bbf928a4c984ab792ade6a0e3b
+Author: Victor Morales <victor_flores_5@hotmail.com>
+Date:   Sat Dec 10 18:31:00 2016 -0500
+
+    Feat(Capacitaciones): Se agregan tarea, ejercicio 1 y 2
+(END)
+
+Luis@Luis1925 MINGW64 /d/Proyecto/capacitaciones (master_luis1925)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+Luis@Luis1925 MINGW64 /d/Proyecto/capacitaciones (master)
+$ git marge master_luis1925
+git: 'marge' is not a git command. See 'git --help'.
+
+Did you mean this?
+        merge
+
+Luis@Luis1925 MINGW64 /d/Proyecto/capacitaciones (master)
+$ git merge master_luis1925
+Updating 37d00ff..6ac0eca
+Fast-forward
+ capacitacion02/luisfernando.html | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+ create mode 100644 capacitacion02/luisfernando.html
+
+Luis@Luis1925 MINGW64 /d/Proyecto/capacitaciones (master)
+$ git push origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com/': luis1925
+remote: You must verify your email address.
+remote: See https://github.com/settings/emails.
+fatal: unable to access 'https://github.com/victormf28/capacitaciones.git/': The requested URL returned error: 403
+
+Luis@Luis1925 MINGW64 /d/Proyecto/capacitaciones (master)
+$ git push origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com/': luis1925
+remote: You must verify your email address.
+remote: See https://github.com/settings/emails.
+fatal: unable to access 'https://github.com/victormf28/capacitaciones.git/': The requested URL returned error: 403
+
+Luis@Luis1925 MINGW64 /d/Proyecto/capacitaciones (master)
+$ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 328 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
+To https://github.com/victormf28/capacitaciones.git
+   37d00ff..6ac0eca  master -> master
+
+Luis@Luis1925 MINGW64 /d/Proyecto/capacitaciones (master)
+$ git log
+commit 6ac0eca2e65495c367c8f4b23e675a0e9775c703
+Author: Luis Fernando Valderrama Gastiaburu <Luis Fernando Valderrama Gastiaburu>
+Date:   Sat Dec 17 16:05:49 2016 -0500
+
+    cambio de luis fernando
+
+commit 37d00fff5006f6326f6b57385740c7e21d15dfe1
+Author: Paulo018 <paulo01324@hotmail.com>
+Date:   Sat Dec 17 15:58:41 2016 -0500
+
+    Cambios de Paulo
+
+commit 187edf046c0bfbe838df2246563a453e21c8f346
+Merge: 5518266 4d0f14e
+Author: Power8000 <pee_98tauro@hotmail.com>
+Date:   Sat Dec 17 15:37:30 2016 -0500
+
+    Merge branch 'master-pedro'
+
+commit 5518266b21792d6fbbb3136251bba0825cc37275
+Merge: 9732320 7a8ca5b
+Author: Ipsum01 <luis_paco@hotmail.com>
+Date:   Sat Dec 17 15:32:33 2016 -0500
+
+    Merge branch 'master_Luis'
+
+commit 7a8ca5bbf4c91093295b83c7e2978148bb28cf6b
+Author: Ipsum01 <luis_paco@hotmail.com>
+Date:   Sat Dec 17 14:49:22 2016 -0500
+
+    cambios Luis
+
+commit 9732320429cd115d8cbddf158b52d9d7e2219561
+Author: elizabeth <elizabeth_virgo26_97@hotmail.com>
+Date:   Sat Dec 17 14:53:40 2016 -0500
+
+    Cambios nombre
+
+commit 4d0f14ee0d57370ba204e82845b604b4f4e47d82
+Author: pedro jesus mendoza ardiles <pedro jesus mendoza ardiles>
+Date:   Sat Dec 17 14:43:11 2016 -0500
+
+    Cambios de Pedro
+
+commit aa40c9a7b1693bcf8bc182f918fd82a34e6c33fe
+Author: Victor Morales <victor_flores_5@hotmail.com>
+Date:   Sat Dec 17 14:15:21 2016 -0500
+
+    cambios para git
+
+commit 15b7bac1ae34ccca8b7ebea439e41a1c7f62bd34
+Author: victormf28 <victor_flores_5@hotmail.com>
+Date:   Sun Dec 11 13:11:55 2016 -0500
+
+    Feat(Cap 01): se avanza ejericio 03
+
+commit 7741d76b661119bbf928a4c984ab792ade6a0e3b
+:
+
+Luis@Luis1925 MINGW64 /d/Proyecto/capacitaciones (master)
+$ git pull origin master
+From https://github.com/victormf28/capacitaciones
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+
+Luis@Luis1925 MINGW64 /d/Proyecto/capacitaciones (master)
+$ git log
+commit 6ac0eca2e65495c367c8f4b23e675a0e9775c703
+Author: Luis Fernando Valderrama Gastiaburu <Luis Fernando Valderrama Gastiaburu>
+Date:   Sat Dec 17 16:05:49 2016 -0500
+
+    cambio de luis fernando
+
+commit 37d00fff5006f6326f6b57385740c7e21d15dfe1
+Author: Paulo018 <paulo01324@hotmail.com>
+Date:   Sat Dec 17 15:58:41 2016 -0500
+
+    Cambios de Paulo
+
+commit 187edf046c0bfbe838df2246563a453e21c8f346
+Merge: 5518266 4d0f14e
+Author: Power8000 <pee_98tauro@hotmail.com>
+Date:   Sat Dec 17 15:37:30 2016 -0500
+
+    Merge branch 'master-pedro'
+
+commit 5518266b21792d6fbbb3136251bba0825cc37275
+Merge: 9732320 7a8ca5b
+Author: Ipsum01 <luis_paco@hotmail.com>
+Date:   Sat Dec 17 15:32:33 2016 -0500
+
+    Merge branch 'master_Luis'
+
+commit 7a8ca5bbf4c91093295b83c7e2978148bb28cf6b
+Author: Ipsum01 <luis_paco@hotmail.com>
+Date:   Sat Dec 17 14:49:22 2016 -0500
+
+    cambios Luis
+
+commit 9732320429cd115d8cbddf158b52d9d7e2219561
+Author: elizabeth <elizabeth_virgo26_97@hotmail.com>
+Date:   Sat Dec 17 14:53:40 2016 -0500
+
+    Cambios nombre
+
+commit 4d0f14ee0d57370ba204e82845b604b4f4e47d82
+Author: pedro jesus mendoza ardiles <pedro jesus mendoza ardiles>
+Date:   Sat Dec 17 14:43:11 2016 -0500
+
+    Cambios de Pedro
+
+commit aa40c9a7b1693bcf8bc182f918fd82a34e6c33fe
+Author: Victor Morales <victor_flores_5@hotmail.com>
+Date:   Sat Dec 17 14:15:21 2016 -0500
+
+    cambios para git
+
+commit 15b7bac1ae34ccca8b7ebea439e41a1c7f62bd34
+Author: victormf28 <victor_flores_5@hotmail.com>
+Date:   Sun Dec 11 13:11:55 2016 -0500
+
+    Feat(Cap 01): se avanza ejericio 03
+
+commit 7741d76b661119bbf928a4c984ab792ade6a0e3b
+:
+
+Luis@Luis1925 MINGW64 /d/Proyecto/capacitaciones (master)
+$

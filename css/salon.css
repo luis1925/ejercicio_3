@@ -1,0 +1,160 @@
+div{
+  width: 100%;
+}
+.salon{
+  background: #e4ebf3;
+  position: relative;
+  width: 100%;
+  padding-top: 20px;
+}
+.salon .base1{
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.salon .base1 h1{
+  font-size: 18px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+.salon .base1 p{
+  font-size: 14px;
+    padding: 0 10px;
+}
+.salon .background1{
+position: relative;
+  width: 100%;
+}
+.salon .background1 .imagen-tablet{
+  width: 60%;
+  padding-left: 20%;
+  padding-right: 20%;
+  align-content: center;
+  position: relative;
+}
+.salon .background1 .imagen-desktop{
+  display: none;
+}
+.salon .referencia{
+  margin:20px 0;
+  width: 100%;
+  text-align: center;
+}
+.salon .referencia h1{
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.salon .referencia .vinculos
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.salon .referencia .vinculos .ref{
+
+  padding: 6px;
+  border-radius: 6px;
+  margin-right: 3px;
+  background: #bac5cf;
+  text-decoration: none;
+}
+.salon .referencia .vinculos .ref:hover{
+    background: #3396dc;
+}
+.salon .buttons{
+  width: 100%;
+  display: flex;
+  justify-content:center;
+}
+.salon .buttons .browse{
+  display: flex;
+  width: 30%;
+  background: #3598db;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 17px;
+  padding: 10px 15px;
+  margin-bottom: 100px;
+
+}
+.salon .buttons .browse span{
+    font-size: 14px;
+    color: white;
+}
+.salon .referencia-columna{
+  display: none;
+}
+@media screen and (min-width: 1000px){
+  .salon{
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .salon .base1{
+      display: none;
+  }
+
+  .salon .background1{
+    position: relative;
+    width: 100%;
+
+  }
+  .salon .referencia{
+    display: none;
+  }
+  .salon .buttons{
+    display: none;
+  }
+  .salon .background1 .imagen-tablet{
+    width: 80%;
+    padding-top: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-content: center;
+    position: relative;
+
+  }
+  .salon .referencia-columna{
+    display: block;
+  }
+  .salon .referencia-columna h1{
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .salon .referencia-columna p{
+    font-size: 14px;
+    padding: 2 10px;
+    margin-bottom: 40px;
+  }
+  .salon .referencia-columna .description1 p{
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  .salon .referencia-columna .description1 h2{
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  .salon .referencia-columna .buttons1{
+    width: 100%;
+    margin-top: 40px;
+  }
+  .salon .referencia-columna .buttons1 .browse1{
+    display: flex;
+    width: 20%;
+    background: #3598db;
+    justify-content: space-between;
+    text-decoration: none;
+    border-radius: 17px;
+    padding: 10px 33px;
+    margin-bottom: 40px;
+  }
+  .salon .referencia-columna .buttons1 .browse1 span{
+      font-size: 14px;
+      color: white;
+  }
+
+
+
+}
