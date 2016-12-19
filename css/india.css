@@ -26,6 +26,7 @@
 .india .logos{
   display: flex;
   flex-wrap: wrap;
+  margin: 10px 0;
 }
 .india .logos .portal{
   width: calc(40% - 10px);
@@ -40,11 +41,14 @@
   padding-bottom: 30px;
 }
 .india .informacion .video{
-  width: 100%;
+  width: 90%;
+  padding: 10px 10px;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 .india .informacion .descripcion{
   font-size: 16px;
-  margin-top: -10px;
+
 }
 .india .informacion .descripcion p{
 
@@ -77,23 +81,29 @@
 .india .informacion .descripcion .descripcion02{
   display: none;
 }
-.india .buttons{
-  width: 100%;
-}
+
 .india .buttons .read{
   display: flex;
-  width: 50%;
   margin: auto;
   margin-bottom: 20px;
   text-decoration: none;
+  justify-content: center;
   color: black;
 }
+.india .buttons .read span{
+  margin-right: 10px;
+}
+
 @media screen and (min-width: 1000px){
   .india .titulo h1{
     font-size: 25px;
   }
   .india .titulo p{
     font-size: 16px;
+  }
+  .india .logos{
+    margin: 20px 0;
+    margin-bottom: 20px;
   }
   .india .logos .portal{
     width: 20%;
@@ -103,7 +113,7 @@
   .india .informacion{
     flex-direction: row;
     width: 80%;
-    padding: 0 10%;
+    padding: 20px 10%;
     padding-bottom: 30px;
   }
   .india .informacion .video{
@@ -116,7 +126,6 @@
     padding: 0 2.5%;
   }
 
-
   .india .informacion .descripcion{
 
     display: flex;
@@ -127,12 +136,6 @@
   .india .informacion .descripcion p{
     font-size: 16px;
   }
-  .india .informacion .descripcion .descripcion02{
-    width: 40%;
-    display: block;
-    border: 1px solid rgba(0,0,0,0.2);
-    padding: 10px 10px;
-  }
   .india .informacion .descripcion .descripcion{
     width: 50%;
     display: flex;
@@ -140,10 +143,20 @@
     border: 1px solid rgba(0,0,0,0.2);
     padding: 10px 10px;
   }
+  .india .informacion .descripcion .descripcion02{
+    width: 40%;
+    display: block;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 10px 10px;
+  }
+
   .india .informacion .descripcion .usuario .user h1{
     font-size: 18px;
   }
   .india .informacion .descripcion .usuario .user p{
     font-size: 14px;
+  }
+  .india .buttons .read{
+    justify-content: center;
   }
 }
