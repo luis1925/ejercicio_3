@@ -102,15 +102,6 @@ div{
   .salon .buttons{
     display: none;
   }
-  .salon .background1 .imagen-tablet{
-    width: 80%;
-    padding-top: 0;
-    padding-left: 10%;
-    padding-right: 10%;
-    align-content: center;
-    position: relative;
-
-  }
   .salon .referencia-columna{
     display: block;
   }
