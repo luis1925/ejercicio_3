@@ -15,20 +15,22 @@
   text-align: center;
 }
 .others .base h1{
+  color: #3a4b5b;
   font-size: 18px;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 20px;
 }
 .others .base p{
-  font-size: 14px;
-  padding: 0 10px;
+  color: #394a5e;
+  font-size: 12px;
+  padding: 0 30px;
 }
 .others .background{
   position: absolute;
   width: 300px;
   margin-top: -100px;
   margin-left: -100px;
-  
+
 }
 .others .background .imagen-esquina{
   position: relative;
@@ -36,15 +38,21 @@
 }
 
 .others .cursos{
-
   display: flex;
   flex-direction: row;
   overflow: auto;
+  padding: 0;
+  background: linear-gradient( 90deg, #ffffff,#ffffff,#ffffff,#bac5cf);
 }
+
 .others .cursos .producto{
   background: rgba(255,255,255,0.8);
-  margin: 10px;
   min-width: 220px;
+  margin:0  10px;
+  border: 2px solid rgba(0,0,0,0.3);
+}
+.others .cursos:first-child{
+  margin-left: 30px;
 }
 .others .cursos .producto .imagen-curso{
   position: relative;
@@ -75,24 +83,25 @@
 }
 
 .others .cursos .producto h1{
-  font-size: 16px;
+  font-size: 14px;
   margin:10px 0;
+  padding-left: 5px;
 }
 .others .cursos .producto p{
+  color: #3a4b5b;
   font-size: 12px;
   margin-bottom: 10px;
+  padding-left: 5px;
 }
 .others .cursos .producto .estrella{
   display: flex;
   flex-direction: row;
   margin-bottom: 10px;
-  position: relative;
-}
-.others .cursos .producto .estrella .nulo img{
-
+  padding-left: 5px;
+  text-align:
 }
 .others .cursos .producto .pie{
-  border: 1px solid black;
+  border-top: 2px solid rgba(0,0,0,0.3);
   display: flex;
   justify-content: space-between;
   background:rgba(227,234,242,0.7);
@@ -103,17 +112,23 @@
     display: flex;
     align-items: center;
     padding-left: 10px;
+    font-size: 13px;
 }
+.others .cursos .producto .pie .student .people{
+  width: 23px;
+  margin-right: 5px;
+}
+
 .others .cursos .producto .pie .costo{
   padding-right: 10px;
   text-align: right;
-  margin: auto;
   color: green;
+  font-size: 13px;
 }
 .others .buttons{
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin: 30px 0;
 }
 .others .buttons .browse{
   display: flex;
@@ -123,7 +138,7 @@
   justify-content: center;
   text-decoration: none;
   border-radius: 20px;
-  padding: 10px 10px;
+  padding: 10px 18px;
   margin-bottom: 40px;
 }
 .others .buttons .browse span{

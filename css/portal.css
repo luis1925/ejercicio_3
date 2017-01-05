@@ -18,7 +18,7 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
 }
 
 .portal .menu{
@@ -41,7 +41,7 @@
 	margin-right: 10px;
 }
 .portal .logo span{
-	color: white;
+	color: #f1f1f0;
 }
 
 .portal .access{
@@ -63,6 +63,7 @@
 	box-sizing: border-box;
 }
 .portal .description h1{
+	color: #e9eae9;
 	font-size: 18px;
 	line-height: 20px;
 	margin-bottom: 30px;
@@ -70,7 +71,7 @@
 .portal .description p{
 	font-size: 14px;
 	line-height: 20px;
-	color: rgba(255, 255, 255, 0.8);
+	color:#dddfe2;
 	margin-bottom: 50px;
 }
 .portal .description .buttons{
@@ -86,7 +87,7 @@
 }
 .portal .description .buttons .start{
 	background: #14c752;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	padding: 10px 33px;
 }
 .portal .description .buttons .browse{
@@ -102,6 +103,7 @@
 }
 .portal .description .buttons .browse span{
 	margin-right: 5px;
+
 }
 .portal .description .buttons .browse img{
 	width: 12px;
@@ -109,10 +111,9 @@
 }
 .portal .arrow-bottom{
 	position: absolute;
-	bottom: 7%;
+	bottom: 5%;
 	left: 0;
 	width: 100%;
-
 	display: flex;
 	justify-content: center;
 }
@@ -144,7 +145,6 @@
 	.portal .description p{
 		font-size: 22px;
 		line-height: 30px;
-		color: rgba(255, 255, 255, 0.8);
 		margin-bottom: 100px;
 	}
 	.portal .description .buttons a{
@@ -152,15 +152,10 @@
 		border-radius: 23px;
 	}
 	.portal .description .buttons .start{
-		background: #14c752;
 		margin-bottom: 20px;
 		padding: 14px 33px;
 	}
 	.portal .description .buttons .browse{
-		border: 1px solid white;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
 		padding: 14px 15px;
 	}
 	.portal .description .buttons .browse img {
@@ -204,6 +199,14 @@
 	}
 	.portal .description{
 		width: 90%;
+		margin: 70px 0;
 	}
-
+	.portal .description .buttons{
+		flex-direction: row;
+		justify-content:center;
+	}
+	.portal .description .buttons .start{
+		margin-bottom: 0;
+		margin-right: 30px;
+	}
 }

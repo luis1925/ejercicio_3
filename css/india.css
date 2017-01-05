@@ -19,10 +19,12 @@
   font-size: 20px;
   margin-bottom: 20px;
   margin-top: 30px;
+  color: #364b61;
 }
 .india .titulo p{
   font-size: 14px;
   padding: 0 10px;
+  color: #435e73;
 }
 .india .logos{
   display: flex;
@@ -61,13 +63,17 @@
 }
 .india .informacion .comentario .descripcion{
   font-size: 16px;
+  color: #435e73;
 
 }
 .india .informacion .comentario .descripcion > p{
     font-size: 14px;
     padding: 10px;
     letter-spacing: 0.2px;
-    line-height: 20px
+    line-height: 20px;
+    color: #364b61;
+
+
 }
 .india .informacion .comentario .descripcion .usuario{
   display: flex;
@@ -102,6 +108,7 @@
   color: black;
 }
 .india .buttons .read span{
+  color: #364b61;
   margin-right: 10px;
 }
 @media screen and (min-width: 768px){j
@@ -117,28 +124,25 @@
   }
 
   .india .informacion{
-    display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     padding: 20px;
     margin: 30px 0;
   }
   .india .informacion .comentario .video.visible{
-    width: 200px;
-    height: 100px;
-    margin: auto 10px;
+    /*max-width: 150px;*/
   }
   .india .informacion .comentario{
     display:flex;
+    width: 100%;
     flex-direction: row;
-    width: 30%;
     margin: 0;
   }
   .india .informacion .comentario:first-child{
     display: flex;
+    min-width: 600px;
     flex-direction: row;
-    margin-left: 10%;
-    min-width: 550px;
+    margin-right: 30px;
   }
   .india .logos .portal{
     width: 25%;
@@ -147,9 +151,10 @@
   }
 
   .india .informacion .comentario .descripcion{
-
-    margin: auto;
+    max-width: 400px;
     padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
   }
 }
